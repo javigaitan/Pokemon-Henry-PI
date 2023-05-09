@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { Op } = require ('sequelize');
 const { Pokemon,  Types} = require('../db');
 const { setOrder, filters} = require ('../Middlewares/middlewares');
-const { route } = require('./Types');
+
+
 
 router.get('/', async (req, res) => {
     let { name, typeFilter, order, created } = req.query

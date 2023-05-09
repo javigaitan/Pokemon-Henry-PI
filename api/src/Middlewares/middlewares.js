@@ -17,7 +17,6 @@ const getPoke = async () => {
             defense: url.data.stats.find(e => e.stat.name === 'defense').base_stat,
             speed: url.data.stats.find(e => e.stat.name === 'speed').base_stat,
             types: url.data.types.map(e => e = { name: e.type.name }),
-            // img: url.data.sprites.versions['generation-v']['black-white'].animated.front_default,
             img: url.data.sprites.other["official-artwork"].front_default,
         }
         );
