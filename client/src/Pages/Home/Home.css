@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+.homebc{
+    background-image: url('../resources/bd\ prueba.gif');
+    background-repeat:round;
+    background-size:contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-back{
+    font-family: 'Press Start 2P', cursive;
+  font-size: medium;
+  background-color: transparent;
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.button-back:hover {
+    background-color: var(--color-orange);
+    color: var(--color-blue);
+  }
+  
+  .button-back:first-of-type {
+    margin-left: 15px;
+  }
+  
+  .button-back:last-of-type {
+    margin-right: 15px;
+  }
+
+.top-bar{
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+    
+}
