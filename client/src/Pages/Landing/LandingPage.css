@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+
+.title-henry{
+    font-size:x-small;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    color: var(--color-black);
+}
+
+.landing{
+    background-image: url('../resources/landing-gif.gif');
+    background-repeat:round;
+    background-size:contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+.title-henry:hover{
+    color: var(--color-orange);
+    transition: 1s;
+}
+
+
+.button{
+    font-family: 'Press Start 2P', cursive;
+    background-color: transparent;
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.button:hover {
+  background-color: var(--color-orange);
+  color: var(--color-blue);
+  
+}
