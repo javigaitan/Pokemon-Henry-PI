@@ -1,6 +1,6 @@
 const axios = require('axios');
 const {Pokemon, Type} = require ('../db.js');
-const { URL_API_POKEMON, URL_API_POKEMON_NAME_OR_ID } = require('../utils/GlobalConst');
+const { URL_API_POKEMON, URL_API_POKEMON_NAME_OR_ID } = require('../utils/Globales.js');
 
 
 //me permite obtener los pokemons de la pokeapi
