@@ -21,7 +21,7 @@
 .landing{
     background-image: url('../resources/landing-gif.gif');
     background-repeat:round;
-    background-size:contain;
+    background-size:cover;
     height: 100vh;
     display: flex;
     justify-content: center;

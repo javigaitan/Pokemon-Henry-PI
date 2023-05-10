@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css';
 import {Link} from "react-router-dom";
+import Loader from "../../components/Loader/Loader";
 
 
 
@@ -16,6 +17,9 @@ export default function Home(){
                         <button className="button-back">Create Pokémon</button>
                     </Link>
                 </div>
+
+
+                <Loader/>
 
 
         </div>

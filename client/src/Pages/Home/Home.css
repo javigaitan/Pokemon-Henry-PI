@@ -9,9 +9,9 @@
   }
 
 .homebc{
-    background-image: url('../resources/bd\ prueba.gif');
-    background-repeat:round;
-    background-size:contain;
+    background-image: url('../resources/bd\ pruebalarge.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,5 +47,4 @@
   right: 0;
   display: flex;
   justify-content: space-between;
-    
 }
