@@ -12,18 +12,26 @@ import './Home.css'
 
 export default function Home(){
 
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
   const pokemones = useSelector((state) => state.pokemons);
-  //const pokerefresh = useSelector(state => state.allPokemons);
   const [loaded, setLoaded] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [order, setOrder] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [pokePerPage] = useState(8);
+  const [pokePerPage] = useState(12);
 
   useEffect(() => {
     dispatch(GetPokemons());
     dispatch(GetType());
   }, [dispatch]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const lastPoke = currentPage * pokePerPage;
   const firstPoke = lastPoke - pokePerPage;
@@ -33,33 +41,39 @@ export default function Home(){
     setCurrentPage(num);
   };
 
-    return(
-        <div className="homebc">
-                <div className="top-bar">
-                    <Link to="/">
-                        <button className="button-back">Back</button>
-                    </Link>
-               
-                    <Link to="/">
-                        <button className="button-back">Create Pokémon</button>
-                    </Link>
-                </div>
+  return (
+    <div>
+      <div className="homebc">
+        <div className="top-bar">
+          <Link to="/">
+            <button className="button-back">Back</button>
+          </Link>
+          <Link to="/">
+            <button className="button-back">Create Pokémon</button>
+          </Link>
+        </div>
 
-                <div className='containerPagination'>
-          <Paginado
-            currentPage={currentPage}
-            pokePerPage={pokePerPage}
-            pokeTotal={pokemones.length}
-            paginado={paginado}
-          />
-        </div>
-        <div className='containerCards'>
-          {!loaded && currentPokes[0] === "error" ? (
-            <NotFound />
-          ) : (
-            <Cards pokemons={currentPokes} />
-          )}
-        </div>
+        {loading ? (
+          <Loader /> // Renderizar el componente Loader mientras se carga
+        ) : (
+          <div className="containerCards">
+            {currentPokes.length === 0 ? (
+              <NotFound />
+            ) : (
+              <Cards pokemons={currentPokes} />
+            )}
+          </div>
+        )}
       </div>
-    );
-};
+
+      <div className="containerPagination">
+        <Paginado
+          currentPage={currentPage}
+          pokePerPage={pokePerPage}
+          pokeTotal={pokemones.length}
+          paginado={paginado}
+        />
+      </div>
+    </div>
+  );
+}

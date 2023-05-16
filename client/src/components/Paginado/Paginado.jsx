@@ -3,39 +3,39 @@ import { Link } from "react-router-dom";
 import './Paginado.css'
 
 
-const Paginado = ({ pokePerPage, pokeTotal, pagination, currentPage }) => {
+const Paginado = ({ pokePerPage, pokeTotal, paginado, currentPage }) => {
     const pageNumbers = [];
     for (let i = 1; i <= Math.ceil(pokeTotal / pokePerPage); i++) {
       pageNumbers.push(i);
     }
     const handlerPrev = () => {
       if (currentPage === 1) return;
-      pagination(currentPage - 1);
+      paginado(currentPage - 1);
     };
     const handlerNext = () => {
       if (currentPage === pageNumbers.length) return;
-      pagination(currentPage + 1);
+      paginado(currentPage + 1);
     };
   
     return pageNumbers.length > 1 ? (
       <nav>
-        <div className='container'>
-          <button className='btn_pn' onClick={() => handlerPrev()}>
+        <div className='container-paginado'>
+          <button className='button-pag' onClick={() => handlerPrev()}>
             Prev
           </button>
           {pageNumbers.map((num) => (
             <div key={num}>
               <Link to={num}>
                 <button
-                  className='btn'
-                  onClick={() => pagination(num)}
+                  className='button-pag'
+                  onClick={() => paginado(num)}
                 >
                   {num}
                 </button>
               </Link>
             </div>
           ))}
-          <button className='btn_pn' onClick={() => handlerNext()}>
+          <button className='button-pag' onClick={() => handlerNext()}>
             Next
           </button>
         </div>

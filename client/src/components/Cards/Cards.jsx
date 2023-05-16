@@ -3,7 +3,7 @@ import './Cards.css'
 
 const Cards = ({pokemons}) => {
     return (
-        <div>
+        <div className="containerCards">
             {pokemons?.map((p) => (
         <Card
           key={p.id}

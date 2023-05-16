@@ -9,10 +9,9 @@
   }
 
 .homebc{
-    background-image: url('../resources/bd\ pruebalarge.gif');
-    background-repeat:no-repeat;
-    background-size:cover;
-    height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRY0tj7AbjHsgCod8PpWlQwzxvmyRDUhjZDPuISklL9B44D356lhNdslTiJuvuePL8H_s&usqp=CAU');
+    background-repeat:repeat;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +65,7 @@
 .containerPagination {
   display: flex;
   justify-content: center;
-  overflow-x: auto;
-  padding: 10px;
+ 
+  padding-left: 20px;
 }
+

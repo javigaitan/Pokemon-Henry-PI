@@ -19,7 +19,7 @@
 }
 
 .landing{
-    background-image: url('../resources/landing-gif.gif');
+    background-image: url('../Assets/landing-gif.gif');
     background-repeat:round;
     background-size:cover;
     height: 100vh;

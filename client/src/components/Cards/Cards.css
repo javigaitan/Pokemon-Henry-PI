@@ -1,0 +1,12 @@
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .articles {
+    /* Estilos adicionales para cada tarjeta (ajusta según tus necesidades) */
+    width: 300px;
+  }

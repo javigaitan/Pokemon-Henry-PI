@@ -9,7 +9,7 @@ const Card = ({id, name, image, types}) => {
        <article>
        <div class="article-wrapper">
       <figure>
-      <img src={image} alt={name}  width='300px' height='200px'/>
+      <img src={image} alt={name}  width='250px' height='200px'/>
       </figure>
       <div class="article-body">
         <h2>{name.toUpperCase()}</h2>
