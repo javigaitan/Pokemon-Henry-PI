@@ -1,0 +1,10 @@
+container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .btn_pn, .btn {
+    margin: 0 5px;
+  }

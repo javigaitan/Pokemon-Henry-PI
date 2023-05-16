@@ -5,41 +5,48 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('pokemon', {
     
-    id:{
-      type: DataTypes.UUID,
-      allowNull: false,
+    id: {
+      type: DataTypes.INTEGER,
       primaryKey: true,
-      defaultValue: DataTypes.UUIDV4
+      allowNull: false,
     },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true
+      unique: true,
     },
-    //hp
-    life: {           
+    hp: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
-    attack: {               
+    attack: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     defense: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     speed: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     height: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     weight: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
-    //image
-    sprite:{
-      type: DataTypes.STRING,
-      validate: {isUrl: true},
-      defaultValue: "https://imagenpng.com/wp-content/uploads/2016/09/Pokebola-pokeball-png-0.png"
+    image: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
+    createdBd: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: true,
     },
   });
 };

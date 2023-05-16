@@ -48,3 +48,24 @@
   display: flex;
   justify-content: space-between;
 }
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.containerFilters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 15px;
+}
+
+.containerPagination {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 10px;
+}

@@ -1,13 +1,17 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter as Router,Routes,Route, Link,} from "react-router-dom";
-import LandingPage from './Pages/Landing/LandingPage'
-import Home from './Pages/Home/Home'
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { GetPokemons, GetType } from "./actions/index";
+
+import LandingPage from './components/Landing/LandingPage'
+import Home from './components/Home/Home'
 
 function App() {
   return (
 
-    <Router>
+    
       
       <div className="App">
         <Routes>
@@ -18,7 +22,7 @@ function App() {
       </Routes>
       </div>
 
-    </Router>
+    
   );
 }
 
