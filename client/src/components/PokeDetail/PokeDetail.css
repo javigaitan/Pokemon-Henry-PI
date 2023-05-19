@@ -1,0 +1,142 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+p{
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+:root {
+
+  --color-bg--buttom: ;
+  --color-bg: ;
+  --color-bg-variant: ;
+  --color-primary: ;
+  --color-primary-variant: ;
+  --color-white: #E7F6F2;
+  --color-black: rgba(57, 49, 24);
+  --color-red: rgba(248, 80, 8);
+  --color-orange: rgba(248, 168, 0);
+  --color-blue: rgba(0, 0, 136);
+  --gpColor-BlueHi: ;
+  --gpColor-DustyBlue: ;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+
+
+.bc-pokeback{
+    background: url(https://i.pinimg.com/736x/a8/34/af/a834afbaa0de63124cf577735444c29c--pixel-art.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:760px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+
+  .container2 {
+    
+    background-color: transparent;
+    padding: 10px; 
+  }
+  .title {
+    /* ... */
+    background-color: transparent; 
+    padding: 10px; 
+    margin-top: 2rem; 
+    margin-right: 2rem; 
+    font-size:xx-large;
+  }
+  
+  .image {
+    height: 26rem;
+    width: 26rem;
+  }
+  
+  .container3 {
+    /* ... */
+    background-color: transparent;
+    justify-items: center;
+    
+  }
+  .container3 h2{
+    padding: 20px;
+  }
+  .detailing h3 {
+    /* ... */
+    background-color:var(--color-black);
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5); 
+  }
+  
+  .detailing {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  
+  .detailing h3 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    
+    border-radius: 5px;
+    width: 100%;
+    color: var(--color-black);
+    margin-top: .35rem;
+  }
+  
+  .button-back{
+    font-family: 'Press Start 2P', cursive;
+  font-size: medium;
+  background-color: transparent;
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.button-back:hover {
+    background-color: var(--color-orange);
+    color: var(--color-blue);
+  }
+  
+  .button-back:first-of-type {
+    margin-left: 15px;
+  }
+  
+  .button-back:last-of-type {
+    margin-right: 15px;
+  }

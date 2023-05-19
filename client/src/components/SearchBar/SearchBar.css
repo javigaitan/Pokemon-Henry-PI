@@ -1,0 +1,21 @@
+.input{
+    height: 1.7rem;
+    width: 15rem;
+    font-weight: bolder;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+
+}
+
+.poke-search{
+    padding-left: 8px;
+    width: 4rem;
+}
+
+.form-search{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}

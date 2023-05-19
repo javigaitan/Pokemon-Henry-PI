@@ -1,0 +1,25 @@
+
+
+.filter-contein{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  justify-items: center;
+  justify-self: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.filter{
+   
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  background-color: transparent;
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+  padding: 10px 20px;
+  cursor: pointer;
+
+
+}

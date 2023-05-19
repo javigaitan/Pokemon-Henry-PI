@@ -5,8 +5,14 @@ import {Link} from "react-router-dom";
 import Loader from "../Loader/Loader";
 import { GetPokemons, GetType } from "../../actions/index";
 import Paginado from '../Paginado/Paginado'
-import Cards from '../Cards/Cards'
-import NotFound from '../NotFound/NotFound'
+import Cards from '../Cards/Cards';
+import NotFound from '../NotFound/NotFound';
+import SearchBar from "../SearchBar/SearchBar";
+import AttackFilter from "../Filters/AttackFilter";
+import OrderFilter from "../Filters/OrderFilter";
+import PokemonsFilter from "../Filters/PokemonsFilter";
+import TypeFilter from '../Filters/TypeFilter';
+import CreatePokemon from '../CreatePokemon/CreatePokemon'
 import './Home.css'
 
 
@@ -19,6 +25,9 @@ export default function Home(){
   const [order, setOrder] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [pokePerPage] = useState(12);
+  const handlerHome = () =>{
+    dispatch(GetPokemons());
+  }
 
   useEffect(() => {
     dispatch(GetPokemons());
@@ -48,10 +57,22 @@ export default function Home(){
           <Link to="/">
             <button className="button-back">Back</button>
           </Link>
-          <Link to="/">
+          <Link to="/CreatePokemon">
             <button className="button-back">Create Pokémon</button>
           </Link>
+
+          <SearchBar/>
         </div>
+
+        <div className="top-bar2">
+            <OrderFilter setOrder={setOrder} paginado={paginado} />
+            <AttackFilter setOrder={setOrder} paginado={paginado} />
+            <TypeFilter />
+            <PokemonsFilter />
+
+        </div>
+
+        
 
         {loading ? (
           <Loader /> // Renderizar el componente Loader mientras se carga

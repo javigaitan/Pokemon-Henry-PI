@@ -1,0 +1,30 @@
+
+.bc-form{
+    background-image: url(./fondo\ create.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.button-back2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: medium;
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button-back2:hover {
+      background-color: var(--color-orange);
+      color: var(--color-blue);
+    }
+    
+    .button-back2:first-of-type {
+      margin-left: 15px;
+    }
+    
+    .button-back2:last-of-type {
+      margin-right: 15px;
+    }
