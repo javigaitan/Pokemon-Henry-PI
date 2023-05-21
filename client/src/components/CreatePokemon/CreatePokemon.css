@@ -7,12 +7,16 @@
     height: 100vh;
 }
 
+.backdiv{
+    padding-left: 60px;
+}
+
 .button-back2{
     font-family: 'Press Start 2P', cursive;
-    font-size: medium;
+    font-size:xx-large;
     background-color: transparent;
-    border: 2px solid var(--color-white);
-    color: var(--color-white);
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
     padding: 10px 20px;
     cursor: pointer;
   }
@@ -28,3 +32,140 @@
     .button-back2:last-of-type {
       margin-right: 15px;
     }
+
+
+    .totalcontainer {
+        font-family: 'Press Start 2P', cursive;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+      
+      .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      
+      .container-input {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+        color: var(--color-black);
+        padding: 5px;
+      }
+      .container-input h1 {
+        margin: 1rem;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 5px 10px var(--color-blue);
+        background-color: var(--color-blue);
+        color: var(--color-white);
+      }
+
+    
+      .container-input p {
+        color: var(--color-red);
+        text-shadow: 0px 1px 18px var(--color-blue);
+        font-weight: bold;
+      }
+      
+      .typeButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 35rem;
+        width: 35rem;
+        margin: 1rem;
+        padding: 3rem;
+        border-radius: 10px;
+      }
+
+      .typeButtons h1{
+        margin: 1rem;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 5px 10px var(--color-blue);
+        background-color: var(--color-blue);
+        color: var(--color-white);
+
+      }
+
+      .typeButtons1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .typeButtons1 h2{
+        color: var(--color-red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .typeButtons input {
+        font-family: 'Press Start 2P', cursive;
+        color: var(--color-blue);
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.7rem;
+        height: 2.5rem;
+        width: 6rem;
+        margin: 0.35rem 1rem;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px var(--color-black);
+      }
+      
+      .typeButtons input:hover {
+        background-color: var(--color-orange);
+        cursor: pointer;
+      }
+      .typeButtonsForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .typeButtons p {
+        color: var(--color-blue);
+        text-shadow: 0px 1px 18px var(--color-blue);
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+      
+      .button {
+        width: 25rem;
+        letter-spacing: 3px;
+        border-radius: 5px;
+        height: 2.5rem;
+        color: var(--color-white);
+        font-weight: 700;
+        background-color:var(--color-blue);
+        margin: 2rem;
+        text-align: center;
+        font-size: 1.25rem;
+      }
+      .button:hover {
+        background-color: var(--color-white);
+        cursor: pointer;
+        color: var(--color-blue);
+      }
+      .typeSelect {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 10;
+      }
+      
+
+    

@@ -24,18 +24,14 @@ p{
 
 :root {
 
-  --color-bg--buttom: ;
-  --color-bg: ;
-  --color-bg-variant: ;
+  --color-black-secont: rgb(121, 113, 92);
   --color-primary: ;
-  --color-primary-variant: ;
   --color-white: #E7F6F2;
   --color-black: rgba(57, 49, 24);
   --color-red: rgba(248, 80, 8);
   --color-orange: rgba(248, 168, 0);
   --color-blue: rgba(0, 0, 136);
-  --gpColor-BlueHi: ;
-  --gpColor-DustyBlue: ;
+ 
 
   --transition: all 400ms ease;
 
