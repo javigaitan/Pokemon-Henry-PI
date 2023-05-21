@@ -18,7 +18,7 @@ import './Home.css'
 
 export default function Home(){
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const pokemones = useSelector((state) => state.pokemons);
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -50,8 +50,13 @@ export default function Home(){
     setCurrentPage(num);
   };
 
+  function handleClick(e){
+    e.preventDefault();
+    dispatch(GetPokemons())
+  }
+
   return (
-    <div>
+    <div >
       <div className="homebc">
         <div className="top-bar">
           <Link to="/">
@@ -60,6 +65,9 @@ export default function Home(){
           <Link to="/CreatePokemon">
             <button className="button-back">Create Pokémon</button>
           </Link>
+
+          <button className="button-back" onClick={e =>{handleClick(e)}}>Reset</button>
+
 
           <SearchBar/>
         </div>

@@ -11,6 +11,31 @@
     padding-left: 60px;
 }
 
+.btn-type{
+    font-family: 'Press Start 2P', cursive;
+    font-size: medium;
+    background: transparent;
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-type:hover {
+    background-color: var(--color-orange);
+    color: var(--color-blue);
+  }
+  
+  .button-back2:first-of-type {
+    margin-left: 15px;
+  }
+  
+  .button-back2:last-of-type {
+    margin-right: 15px;
+  }
+
+
 .button-back2{
     font-family: 'Press Start 2P', cursive;
     font-size:xx-large;
@@ -81,10 +106,8 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 35rem;
-        width: 35rem;
-        margin: 1rem;
-        padding: 3rem;
+        
+        padding: 0.5rem;
         border-radius: 10px;
       }
 

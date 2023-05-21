@@ -194,7 +194,7 @@ export default function CreatePokemon() {
             id={t.id}
             value={t.name}
             onClick={HandleTypeChange}
-            className={`typeButton ${form.type.includes(t.name) ? 'selected' : ''}`}
+            className={`btn-type ${form.type.includes(t.name) ? 'selected' : ''}`}
           >
             {t.name}
           </button>

@@ -9,12 +9,14 @@
   }
 
 .homebc{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRY0tj7AbjHsgCod8PpWlQwzxvmyRDUhjZDPuISklL9B44D356lhNdslTiJuvuePL8H_s&usqp=CAU');
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/129a0238717551.576c1f0538ce9.png');
     background-repeat:repeat;
-    height: 200vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 40rem;
+    padding-bottom: 30rem;
 }
 
 .button-back{
