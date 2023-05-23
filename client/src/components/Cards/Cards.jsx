@@ -11,6 +11,7 @@ const Cards = ({pokemons}) => {
           name={p.name}
           image={p.image}
           types={p.types}
+          
         />
       ))}
         </div>
