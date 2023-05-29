@@ -12,4 +12,3 @@ const store = createStore(
 
 export default store
 
-//por problemas con la variabnle store use myStore RECORDAR !!!
