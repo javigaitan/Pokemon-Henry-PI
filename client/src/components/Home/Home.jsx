@@ -12,7 +12,6 @@ import AttackFilter from "../Filters/AttackFilter";
 import OrderFilter from "../Filters/OrderFilter";
 import PokemonsFilter from "../Filters/PokemonsFilter";
 import TypeFilter from '../Filters/TypeFilter';
-import CreatePokemon from '../CreatePokemon/CreatePokemon'
 import './Home.css'
 
 
@@ -20,7 +19,6 @@ export default function Home(){
 
   const dispatch = useDispatch();
   const pokemones = useSelector((state) => state.pokemons);
-  const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
   const [order, setOrder] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
