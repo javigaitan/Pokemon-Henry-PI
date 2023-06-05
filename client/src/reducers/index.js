@@ -21,6 +21,7 @@ import {
   
   function rootReducer(state = inicialState, action) {
     switch (action.type) {
+
       case GET_ALL_POKEMONS:
         return {
           ...state,
@@ -129,8 +130,16 @@ import {
         return {
           ...state,
         };
-      default:
-        return state;
+    
+
+      case 'DELETE_POKEMON':
+        const updatePokemons = state.pokemons.filter((pokemon) => pokemon.id !== action.payload);
+        return{
+          ...state,
+          pokemons: updatePokemons,
+        };
+        default:
+          return state;
     }
   }
   

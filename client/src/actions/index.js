@@ -11,6 +11,7 @@ export const FILTER_ORDER = "FILTER_ORDER";
 export const FILTER_TYPE = "FILTER_TYPE";
 export const GET_TYPE = "GET_TYPE";
 export const POST_POKEMON = "POST_POKEMON";
+export const DELETE_POKEMON = "DELETE_POKEMON";
 
 export const PostPokemon = (data) => async (dispatch) => {
   try {
@@ -20,6 +21,15 @@ export const PostPokemon = (data) => async (dispatch) => {
       data: data,
     });
   } catch (error) {
+    console.log(error.message);
+  }
+};
+
+export const DeletePokemon = (id) => async (dispatch) => {
+  try{
+    await axios.delete(`/pokemons/${id}`);
+    dispatch({type: DELETE_POKEMON, payload:id});
+  }catch (error){
     console.log(error.message);
   }
 };

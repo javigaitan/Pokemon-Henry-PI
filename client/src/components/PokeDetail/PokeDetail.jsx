@@ -4,6 +4,7 @@ import { CleanDetail, GetPokemonDetail } from '../../actions';
 import { useNavigate,useParams } from 'react-router-dom';
 import './PokeDetail.css'
 import Loader from '../Loader/Loader';
+import PokemonDeleteButton from '../PokemonDeleteButton/PokemonDeleteButton';
 
 export const PokeDetail = () =>{
 
@@ -74,6 +75,8 @@ export const PokeDetail = () =>{
                 </div>
               <div className=''>
                 <button className='button-back' onClick={handlerExit}>{"Back"}</button>
+                <PokemonDeleteButton id={id}/>
+
               </div>
             </div>
           )}
