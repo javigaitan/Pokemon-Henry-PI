@@ -114,67 +114,90 @@ export default function CreatePokemon() {
                       <label htmlFor="hp">Hp:</label>
                       <input
                         onChange={handleInputChange}
-                        type="number"
+                        type="range"
+                        min='1'
+                        max='255'
                         name="hp"
                         id="hp"
                         value={form.hp}
                       />
                       <p>{error.hp}</p>
+                      <span>{form.hp}</span>
                     </div>
                     <div className='container-input'>
                       <label htmlFor="attack">Attack:</label>
                       <input
                         onChange={handleInputChange}
-                        type="number"
+                        type="range"
+                        min='1'
+                        max='255'
                         name="attack"
                         id="attack"
                         value={form.attack}
                       />
                       <p>{error.attack}</p>
+                      <span>{form.attack}</span>
+
                     </div>
                     <div className='container-input'>
                       <label htmlFor="defense">Defense:</label>
                       <input
                         onChange={handleInputChange}
-                        type="number"
+                        type="range"
+                        min='1'
+                        max='255'
                         name="defense"
                         id="defense"
                         value={form.defense}
                       />
                       <p>{error.defense}</p>
+                      <span>{form.defense}</span>
+
                     </div>
                     <div className='container-input'>
                       <label htmlFor="speed">Speed:</label>
                       <input
                         onChange={handleInputChange}
-                        type="number"
+                        type="range"
+                        min='1'
+                        max='255'
                         name="speed"
                         id="speed"
                         value={form.speed}
                       />
                       <p>{error.speed}</p>
+                      <span>{form.speed}</span>
+
                     </div>
                     <div className='container-input'>
                       <label htmlFor="height">Height:</label>
                       <input
                         onChange={handleInputChange}
-                        type="number"
+                        type="range"
+                        min='1'
+                        max='20'
                         name="height"
                         id="height"
                         value={form.height}
                       />
                       <p>{error.height}</p>
+                      <span>{form.height}</span>
+
                     </div>
                     <div className='container-input'>
                       <label htmlFor="weight">Weight:</label>
                       <input
                         onChange={handleInputChange}
-                        type="number"
+                        type="range"
+                        min='1'
+                        max='1000'
                         name="weight"
                         id="weight"
                         value={form.weight}
                       />
                       <p>{error.weight}</p>
+                      <span>{form.weight}</span>
+
                     </div>
                   </div>
                 </div>
