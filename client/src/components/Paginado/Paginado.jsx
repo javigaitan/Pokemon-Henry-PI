@@ -27,7 +27,7 @@ const Paginado = ({ pokePerPage, pokeTotal, paginado, currentPage }) => {
             <div key={num}>
               <Link to={num}>
                 <button
-                  className='button-pag'
+                  className={`button-pag ${currentPage === num ? 'active' : ''}`}
                   onClick={() => paginado(num)}
                 >
                   {num}

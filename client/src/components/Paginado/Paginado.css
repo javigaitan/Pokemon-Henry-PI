@@ -4,6 +4,7 @@
     overflow-x: auto;
     padding: 10px;
     white-space: nowrap;
+    padding-top: 30px;
   }
   
 
@@ -19,6 +20,11 @@
  
 }
 .button-pag:hover {
+    background-color: var(--color-orange);
+    color: var(--color-blue);
+  }
+
+  .button-pag.active {
     background-color: var(--color-orange);
     color: var(--color-blue);
   }
