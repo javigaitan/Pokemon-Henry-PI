@@ -9,6 +9,7 @@ import {
     GET_POKEMON_DETAIL,
     GET_TYPE,
     POST_POKEMON,
+    
   } from "../actions/index";
   
   const inicialState = {

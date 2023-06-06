@@ -75,10 +75,7 @@ export default function CreatePokemon() {
         );
       };
     
-      const BackHome = () => {
-        history("/home");
-      };
-
+     
       return (
         <div className='bc-form'>
 
@@ -120,6 +117,7 @@ export default function CreatePokemon() {
                         name="hp"
                         id="hp"
                         value={form.hp}
+                        defaultValue='1'
                       />
                       <p>{error.hp}</p>
                       <span>{form.hp}</span>

@@ -3,15 +3,15 @@ export default function Validacion(input) {
     const regexName = /^[a-zA-Zñáéíóúü]*$/;
     const regexNumber = /^[0-9]+$/;
     const regexUrl =
-      /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+    /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
     if (!input.name) error.name = "need a pokemon name";
-    if (!regexName.test(input.name)) error.name = "only letters are supported";
+    if (!regexName.test(input.name)) error.name = "Enter only letters";
     if (input.name.length < 3 || input.name.length > 10)
       error.name = "between three and ten characters";
   
-    if (!regexNumber.test(input.hp)) error.hp = "only numbers from 1 to 255";
+    if (!regexNumber.test(input.hp)) error.hp = "only num bers from 1 to 255";
     if (!parseInt(input.hp) < 1 && parseInt(input.hp) > 255)
-      error.hp = "only numbers from 1 to 255";
+      error.hp = "only numbers from 1 to 255";  
   
     if (!regexNumber.test(input.attack))
       error.attack = "only numbers from 1 to 255";
