@@ -19,3 +19,8 @@
   flex-direction: row;
   align-items: center;
 }
+
+.error-message{
+  visibility: visible;
+  display: block;
+}

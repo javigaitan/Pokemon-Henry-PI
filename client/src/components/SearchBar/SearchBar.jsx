@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { GetPokemon } from "../../actions";
 import { useDispatch } from "react-redux";
 import './SearchBar.css';
-import Loader from "../Loader/Loader";
-import NotFound from "../NotFound/NotFound";
 
 export default function SearchBar() {
   const dispatch = useDispatch();
@@ -25,7 +23,7 @@ export default function SearchBar() {
           setError('No se encontró el Pokémon');
         });
     } else {
-      setError('Por favor, ingresa un nombre válido');
+      setError('Please enter a name');
     }
   }
 
